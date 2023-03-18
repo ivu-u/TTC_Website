@@ -60,7 +60,7 @@
     padding-right: 0;
 }
 
-.socials {
+.socials{
     float: left;
     height: 100%;
 }
@@ -83,4 +83,25 @@
 
 .socials a:first-child{
     padding-left: 50px;
+}
+
+.main_area{
+    width: 90%;
+    height: 855px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.big_card_helper{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.big_card {
+    height: 800px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
 }
