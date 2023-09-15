@@ -5,27 +5,31 @@
     text-decoration: none;
 }
 
-.header{
+.header
+{
     width: 100%;
     height: 80px;
     display: block;
     background-color: #101010;
 }
 
-.inner_header{
+.inner_header
+{
     width: 90%;
     height: 100%;
     display: block;
     margin: 0 auto;
 }
 
-.logo_container{
+.logo_container
+{
     height: 100%;
     display: table;
     float: left;
 }
 
-.logo_container h1{
+.logo_container h1
+{
     color: white;
     height: 100%;
     display: table-cell;
@@ -34,19 +38,22 @@
     font-size: 40px;
 }
 
-.navigation{
+.navigation
+{
     float: right;
     height: 100%;
 }
 
-.navigation a{
+.navigation a
+{
     height: 100%;
     display: table;
     float: left;
     padding: 0px 20px;
 }
 
-.navigation a li{
+.navigation a li
+{
     display: table-cell;
     vertical-align: middle;
     height: 100%;
@@ -56,23 +63,27 @@
 }
 
 /*psudo selector*/
-.navigation a:last-child{
+.navigation a:last-child
+{
     padding-right: 0;
 }
 
-.socials{
+.socials
+{
     float: left;
     height: 100%;
 }
 
-.socials a{
+.socials a
+{
     height: 100%;
     display: table;
     float: left;
     padding: 0px 20px;
 }
 
-.socials a li{
+.socials a li
+{
     display: table-cell;
     vertical-align: middle;
     height: 100%;
@@ -81,27 +92,38 @@
     font-size: 20px;
 }
 
-.socials a:first-child{
+.socials a:first-child
+{
     padding-left: 50px;
 }
 
-.main_area{
-    width: 90%;
+.main_area {
+    height: 100%;
+    width: 100%;
+    margin: 20px 0 0 20px; /* Add margin space: top right bottom left */
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    /*    width: 90%;
     height: 855px;
     display: block;
-    margin: 0 auto;
-    
+    margin: 0 auto;*/
 }
 
-.big_card_helper{
-    display: inline-block;
+.big_card_helper {
+    padding: 10px; /* Add padding to create space */
+    /*    display: inline-block;
     vertical-align: middle;
-    height: 100%;
+    height: 100%;*/
 }
 
 .big_card {
-    height: 800px;
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Let the height adjust automatically */
+    /*    height: 800px;
     width: auto;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle;*/
 }
