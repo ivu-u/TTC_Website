@@ -125,8 +125,105 @@ body {
     height: auto; /* Let the height adjust automatically */
 }
 
+/* idk how to do this efficiently yet*/
+.grass {
+    position: fixed;
+    bottom: 0;
+    left: 0px; /* Adjust the value to change the horizontal position */
+    z-index: -2;
+}
+
+.grass2 {
+    position: fixed;
+    bottom: 0;
+    left: 635px; /* Adjust the value to change the horizontal position */
+    z-index: -2;
+}
+
+.grass3 {
+    position: fixed;
+    bottom: 0;
+    left: 1350px; /* Adjust the value to change the horizontal position */
+    z-index: -2;
+}
+
+.unit1_gif {
+    left: 60%; /*Position it 50% from the left of the parent container */
+    z-index: -1; /* Send this element to the back */
+}
+
+.unit2_gif {
+    left: 40%; /*Position it 50% from the left of the parent container */
+    z-index: -1; /* Send this element to the back */
+}
+
+.image_at_bottom {
+    position: absolute; /* Position the image absolutely within the body */
+    bottom: 0; /* Position it at the bottom of the viewport */
+    max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+    max-height: 100vh; /* Limit the image height to the viewport height */
+}
+
+.text-container {
+    /* Container styles */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px; /* Increase the font size */
+    text-align: left; /* Align the content to the right */
+    line-height: 1.5; /* Adjust line height (e.g., 1.5 times the font size) */
+
+
+    /* CAN PROLLY MAKE THIS BOTTOM THING A REUSABLE CLASS*/
+
+    /* Adjust the size of the container */
+    width: 900px; /* Adjust the width as needed */
+    height: 600px; /* Adjust the height as needed */
+
+    /* Adjust the position of the container */
+    position: absolute;
+    top: 48%; /* Adjust the vertical position (centered vertically) */
+    left: 60%; /* Adjust the horizontal position (centered horizontally) */
+    transform: translate(-50%, -50%); /* Center the container */
+}
+
+.text_title {
+    /* Styles for content aligned to the right */
+    text-align: center; /* Align the content to the left */
+    margin-bottom: 20px; /* Add some spacing between the content and other content */
+    font-size: 24px; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+}
+
+.my-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    /* Positioning properties */
+    position: absolute; /* Allows precise positioning */
+    top: 85%; /* Vertically center the button within its containing element */
+    left: 80%; /* Horizontally center the button within its containing element */
+    transform: translate(-50%, -50%); /* Center the button precisely */
+
+    /* Size properties */
+    width: 250px; /* Set the width of the button */
+    height: 70px; /* Set the height of the button */
+}
+
 @media screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
     .main_area {
         margin: 20px 0 20px 10px; /* Adjust margins for smaller screens */
     }
+}
