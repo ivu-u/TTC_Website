@@ -44,7 +44,7 @@
     height: 100%;
 }
 
-.navigation a
+.navigation li
 {
     height: 100%;
     display: table;
@@ -52,7 +52,7 @@
     padding: 0px 20px;
 }
 
-.navigation a li
+.navigation li a
 {
     display: table-cell;
     vertical-align: middle;
@@ -97,33 +97,36 @@
     padding-left: 50px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 .main_area {
     height: 100%;
     width: 100%;
-    margin: 20px 0 0 20px; /* Add margin space: top right bottom left */
+    margin: 40px 0; /* Equal margin space on top and bottom, no right or left margin */
     padding: 0;
     overflow: hidden;
     display: flex;
     justify-content: flex-start; /* Align content to the left */
     align-items: center; /* Center vertically */
-    /*    width: 90%;
-    height: 855px;
-    display: block;
-    margin: 0 auto;*/
 }
 
 .big_card_helper {
-    padding: 10px; /* Add padding to create space */
-    /*    display: inline-block;
-    vertical-align: middle;
-    height: 100%;*/
+    padding: 20px; /* Add padding to create space */
 }
 
 .big_card {
     max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 80vh; /* Limit the image height to 80% of the viewport height */
+    width: auto; /* Let the width adjust automatically */
     height: auto; /* Let the height adjust automatically */
-    /*    height: 800px;
-    width: auto;
-    display: inline-block;
-    vertical-align: middle;*/
 }
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .main_area {
+        margin: 20px 0 20px 10px; /* Adjust margins for smaller screens */
+    }
