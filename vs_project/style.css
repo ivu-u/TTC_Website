@@ -164,14 +164,14 @@ body {
     max-height: 100vh; /* Limit the image height to the viewport height */
 }
 
-.text-container {
+.text_container {
     /* Container styles */
     background-color: #f0f0f0;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 20px; /* Increase the font size */
+    font-size: 17px; /* Increase the font size */
     text-align: left; /* Align the content to the right */
     line-height: 1.5; /* Adjust line height (e.g., 1.5 times the font size) */
 
@@ -179,13 +179,13 @@ body {
     /* CAN PROLLY MAKE THIS BOTTOM THING A REUSABLE CLASS*/
 
     /* Adjust the size of the container */
-    width: 900px; /* Adjust the width as needed */
-    height: 600px; /* Adjust the height as needed */
+    width: 60%; /* Adjust the width as needed */
+    height: 60%; /* Adjust the height as needed */
 
     /* Adjust the position of the container */
     position: absolute;
     top: 48%; /* Adjust the vertical position (centered vertically) */
-    left: 60%; /* Adjust the horizontal position (centered horizontally) */
+    left: 66%; /* Adjust the horizontal position (centered horizontally) */
     transform: translate(-50%, -50%); /* Center the container */
 }
 
